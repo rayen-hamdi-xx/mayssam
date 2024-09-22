@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/mayssam/static/css/main.72ef8fb2.css",
+    "main.js": "/mayssam/static/js/main.a0e12167.js",
+    "static/js/453.88f941fb.chunk.js": "/mayssam/static/js/453.88f941fb.chunk.js",
+    "static/media/p-hero.png": "/mayssam/static/media/p-hero.b75e4bc4be20a2e79a77.png",
+    "static/media/metropolis.extra-bold.otf": "/mayssam/static/media/metropolis.extra-bold.f179dd5fc7c0864a964b.otf",
+    "static/media/metropolis.black.otf": "/mayssam/static/media/metropolis.black.1510951eb17eaadbe995.otf",
+    "static/media/metropolis.bold.otf": "/mayssam/static/media/metropolis.bold.c5e04fafcff6fc79cd76.otf",
+    "static/media/metropolis.semi-bold.otf": "/mayssam/static/media/metropolis.semi-bold.5e856013947c22fbcdf4.otf",
+    "static/media/metropolis.medium.otf": "/mayssam/static/media/metropolis.medium.cdcce86268fb4a504ff5.otf",
+    "static/media/metropolis.light.otf": "/mayssam/static/media/metropolis.light.5813789eac597edf6ef4.otf",
+    "static/media/metropolis.regular.otf": "/mayssam/static/media/metropolis.regular.67a1988d7b65b0aaa16d.otf",
+    "static/media/metropolis.extra-light.otf": "/mayssam/static/media/metropolis.extra-light.d1784bd894f8e478ab9f.otf",
+    "static/media/metropolis.thin.otf": "/mayssam/static/media/metropolis.thin.90c6171184f230bfa07a.otf",
+    "static/media/i_calendar.svg": "/mayssam/static/media/i_calendar.7772341d372939d247a49ba3461d8dcb.svg",
+    "index.html": "/mayssam/index.html",
+    "static/media/i_search.svg": "/mayssam/static/media/i_search.e6d853a60cd7c0b2f47fef6940f8f16e.svg",
+    "static/media/i_pin.svg": "/mayssam/static/media/i_pin.d5d70cd2d7e2c91f50815331c6bb8a11.svg",
+    "static/media/i_login.svg": "/mayssam/static/media/i_login.3cacab73e1cb577d6c82bf6eb9ae6813.svg",
+    "static/media/i_polygon.svg": "/mayssam/static/media/i_polygon.3db72a1010aaf8505336a8eaf5e1d2b4.svg",
+    "static/media/i_clock.svg": "/mayssam/static/media/i_clock.98ab7159f728e4b6f22dedee38e4aba3.svg",
+    "static/media/I_VERTICAL.svg": "/mayssam/static/media/I_VERTICAL.8b097a0d3cbc16f156d9c99d02da9edb.svg",
+    "main.72ef8fb2.css.map": "/mayssam/static/css/main.72ef8fb2.css.map",
+    "main.a0e12167.js.map": "/mayssam/static/js/main.a0e12167.js.map",
+    "453.88f941fb.chunk.js.map": "/mayssam/static/js/453.88f941fb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72ef8fb2.css",
+    "static/js/main.a0e12167.js"
+  ]
+}
