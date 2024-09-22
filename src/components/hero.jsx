@@ -10,7 +10,7 @@ export default function Hero(){
                 <div className="flex flex-col items-center gap-[2rem] ">
                     <div className="flex flex-col items-center gap-[3rem]">
                     <h1 className="font-extrabold text-center sm:text-26 xl:text-41 text-whit"><span className="text-red-600">Rapide</span>, <span className="text-red-600">Simple</span> et <span className="text-red-600">Abordable</span> – Votre Location Vous Attend</h1>
-                    <h2 className="flex items-center gap-[2rem] font-extrabold text-23 text-whit">
+                    <h2 className="flex items-center gap-[2rem] font-extrabold sm:text-18 xl:text-23 text-whit">
                     <p ><span className="text-red-500">8 </span>Agences réparties</p> 
                     <I_VERTICAL></I_VERTICAL>
                     <p><span className="text-red-500">120+ </span>Voitures</p>

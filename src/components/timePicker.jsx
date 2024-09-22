@@ -23,7 +23,7 @@ export default function TimePicker(props){
                     </>
                      : 
 
-                    <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.5}}  className="flex flex-col font-medium text-20  text-neutral-900 bg-neutral-100 drop-shadow-[0_2px_15px_rgba(0,0,0,0.15)] w-[6.5rem] min-h-[16rem] rounded-[5px]  overflow-y-scroll">
+                    <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.5}}  className="flex flex-col absolute z-10 font-medium text-20  text-neutral-900 bg-neutral-100 drop-shadow-[0_2px_15px_rgba(0,0,0,0.15)] w-[6.5rem] min-h-[16rem] sm:h-[6rem] rounded-[5px]  overflow-y-scroll">
                     {Array.from({length:24}).map((_,index)=><p className={classNames("p-[0.25rem] hover:bg-neutral-200",{"text-white bg-neutral-800":time.add(index-3,'hour').format("HH:00")===time.format("HH:00")})} onClick={()=>{setTime(time.add(index-3,'hour'));props.setOpen(false)}} key={index}>{time.add(index-3,'hour').format("HH:00")}</p>)}
                      </motion.div>
                     }

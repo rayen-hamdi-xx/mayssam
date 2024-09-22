@@ -54,8 +54,8 @@ export default function Search(){
     },[ishdep]);
     
     return(
-        <div className="w-[77vw] h-[6rem] bg-white rounded-[10px] shadow-search p-[0.75em]  flex justify-between gap-[2rem] ">
-            <div className="w-full h-full  flex gap-[1.5rem]   ">
+        <div className="xl:w-[77vw] sm:w-[58.8vw] h-fit bg-white rounded-[10px] shadow-search p-[0.75em] pl flex xl:flex-row sm:flex-col justify-between gap-[2rem] ">
+            <div className="w-full h-full sm:flex-wrap xl:flex-nowrap md:flex-wrap  flex gap-[1.5rem]   ">
                 <Agences isSearching={isSearching} setIsSearching={setIsSearching} value={value} setValue={setValue}></Agences>
                 <DatePicker title="Date de départ" start={0} open={isdep} setOpen={setdep}/>
                 
@@ -66,7 +66,7 @@ export default function Search(){
                 <TimePicker open={ishret} setOpen={sethret} ></TimePicker>
 
             </div>
-            <div  className="w-[6vw] px-[0.75rem] py-[0.75rem] h-21 flex items-center justify-center cursor-pointer hover:bg-neutral-900 transition-colors duration-300   bg-neutral-800 rounded-[10px]"><I_SEARCH/></div>
+            <div  className=" 2xl:w-[6vw] xl:w-[6vw] md:w-full lg:w-full sm:w-full px-[0.75rem] py-[0.75rem] h-[5rem] flex items-center justify-center cursor-pointer hover:bg-neutral-900 transition-colors duration-300   bg-neutral-800 rounded-[10px]"><I_SEARCH/></div>
             
         </div>
     )

@@ -52,7 +52,7 @@ export default function DatePicker(props) {
     <AnimatePresence>
      {
       props.open && 
-      <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.5}}  className="absolute top-[5.5rem]  "  >
+      <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.5}}  className="absolute z-10 top-[5.5rem]  "  >
       <ThemeProvider theme={customTheme}>
      <LocalizationProvider dateAdapter={AdapterDayjs}>
      <DateCalendar  disablePast reduceAnimations={true}  value={date}  onChange={(newValue) => {setDate(newValue);props.setOpen(false)}}  sx={{
