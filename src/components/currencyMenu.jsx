@@ -7,34 +7,26 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function CurrencyMenu(){
     const menuRef = useRef(null)
     const currencies = [["TND (DT)","DT",1],["USD ($)","$",4],["EUR (€)","€",3],["GBP (£)","£",5]];
-    const {currency,setCurrency,setSymb,setFactor}=useContext(currencyContext);
+    const {currency,setCurrency,symb,setSymb,setFactor}=useContext(currencyContext);
     const [isEnabled,setIsEnabled] = useState(false);
 
-    /*useEffect(()=>{
-        const click= (event)=>{
-            if(menuRef.current && !menuRef.current.contains(event.target)){
-                setIsEnabled(false);
-            }
-        };
-        
-        document.addEventListener("mousedown",click);
-        return()=>{document.removeEventListener("mousedown",click) ;};
-
-    },[])*/
     return (
         <div className="flex flex-col items-center relative "> 
-                    <button onClick={()=>{setIsEnabled(!isEnabled);}} className={classNames("flex text-whit   w-[3rem]  items-center gap-[0.25rem] cursor-pointer text-16",{"text-white opacity-100": isEnabled,"opacity-90 hover:text-white hover:opacity-100":!isEnabled})}>{currency}<I_POLY className={classNames("transition-transform duration-100 ease-in-out",{"rotate-180":isEnabled})} /></button>
+                    <button onClick={()=>{setIsEnabled(!isEnabled);}} className={classNames("flex text-whit   w-fit  items-center gap-[0.25rem] cursor-pointer text-23 tablet:text-14 laptop:text-16 desktop:text-18   font-medium",{"text-white opacity-100": isEnabled,"opacity-90 hover:text-white hover:opacity-100":!isEnabled})}>{currency}<I_POLY className={classNames("transition-transform duration-100 ease-in-out",{"rotate-180":isEnabled})} /></button>
+                   
+                   <AnimatePresence>
                    { 
                    isEnabled && 
-                   <AnimatePresence>
-                   <motion.ul initial={ {opacity:0,y:-10}} exit={{opacity:0,y:-10}} animate={{opacity:1,y:0}} transition={{duration:0.2,type:"tween"}}  ref={menuRef} className="bg-whit text-neutral-900 rounded-[0.25rem] text-nowrap absolute top-[1.5rem]">
+                   
+                   <motion.ul initial={ {opacity:0,y:-10}} exit={{opacity:0,y:-10}} animate={{opacity:1,y:0}} transition={{duration:0.2,type:"spring"}}  ref={menuRef} className="bg-whit text-neutral-900 rounded-[0.25rem] text-nowrap absolute top-[1.5rem]">
                         {currencies.map((curr,index)=>
                            ( <li onClick={()=>{setSymb(curr[1]);setFactor(curr[2]);setCurrency(curr[0].slice(0, curr[0].indexOf(" ")));setIsEnabled(false)}} key={index} className={classNames("py-[0.125rem] active:bg-neutral-800 active:text-white text-semibold text-14 cursor-pointer px-[0.5rem]",{"bg-neutral-800 text-white":curr[0].slice(0,curr[0].indexOf(" "))===currency," hover:bg-neutral-300":curr[0].slice(0,curr[0].indexOf(" "))!==currency,"rounded-t-[0.25rem]":index===0,"rounded-b-[0.25rem]":index===currencies.length-1})}>{curr[0]}</li>)
                     
                     )}
                    </motion.ul>
-                    </AnimatePresence>
+                   
                     } 
+                     </AnimatePresence>
         </div>
     )
 }

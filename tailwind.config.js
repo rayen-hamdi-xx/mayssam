@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens : {
+        "tablet" : "768px",
+        "laptop" :"1024px",
+        "desktop":"1366px"
+      },
       fontSize:{
         "11": "0.6875rem" ,
         "14":"0.875rem",
