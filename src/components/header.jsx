@@ -12,7 +12,7 @@ export default function Header(){
     const [toggleModal,setModal]=useState(false);
     return(
         <>
-        <nav className=" bg-transparent flex items-center justify-between px-6 py-4 '">
+        <nav className="w-full bg-transparent flex items-center justify-between px-6 py-4 '">
             {
                 isSmallScreen ?
                 <>

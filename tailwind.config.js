@@ -8,7 +8,8 @@ module.exports = {
       screens : {
         "tablet" : "768px",
         "laptop" :"1024px",
-        "desktop":"1366px"
+        "desktop":"1366px",
+        "desktop2":"1442px",
       },
       fontSize:{
         "11": "0.6875rem" ,

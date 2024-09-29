@@ -41,17 +41,18 @@ export default function DatePicker(props) {
   });
   
   return (
-    <div className="flex flex-col items-center relative gap-[2rem] h-full max-w-[10.325rem]">
+    <div className="flex flex-col items-center relative gap-[2rem] h-12 w-full">
     <div tabIndex={"0"} onClick={()=>{props.setOpen(!props.open)}} className={classNames("flex flex-col cursor-pointer justify-between h-full min-w-[10.325rem] p-[0.5rem]  shadow-input bg-neutral-100 hover:shadow-input_hover_red_50 hover:bg-red-50    rounded-[5px] ",{"bg-red-50":props.open})}>
-                    <p className="text-neutral-500 font-normal text-16 ">{props.title}</p>
-                    <div className="flex items-center  gap-[0.75rem]">
-                        <I_CALENDAR />
-                            <p className="font-medium text-20  text-neutral-900">{date.format("ddd")+","+date.format("MMM")+","+date.format("DD")}</p>  
+                    <p className="text-neutral-500 font-normal text-11 ">{props.title}</p>
+                    <div className="flex items-center  gap-[0.375rem]">
+                        <I_CALENDAR className="h-[13px] w-[10px]"/>
+                            <p className="font-medium text-14   text-neutral-900">{date.format("ddd")+","+date.format("MMM")+","+date.format("DD")}</p>  
                     </div>
     </div>
     <AnimatePresence>
      {
       props.open && 
+      
       <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.5}}  className="absolute z-10 top-[5.5rem]  "  >
       <ThemeProvider theme={customTheme}>
      <LocalizationProvider dateAdapter={AdapterDayjs}>
