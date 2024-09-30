@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mayssam/static/css/main.10a36ee4.css",
-    "main.js": "/mayssam/static/js/main.187f38be.js",
+    "main.css": "/mayssam/static/css/main.d93b6a2c.css",
+    "main.js": "/mayssam/static/js/main.c3f1c1e4.js",
     "static/js/453.88f941fb.chunk.js": "/mayssam/static/js/453.88f941fb.chunk.js",
     "static/media/p-hero2.png": "/mayssam/static/media/p-hero2.eaddad1a562cd6c4925d.png",
     "static/media/metropolis.extra-bold.otf": "/mayssam/static/media/metropolis.extra-bold.f179dd5fc7c0864a964b.otf",
@@ -22,12 +22,12 @@
     "static/media/i_polygon.svg": "/mayssam/static/media/i_polygon.3db72a1010aaf8505336a8eaf5e1d2b4.svg",
     "static/media/i_clock.svg": "/mayssam/static/media/i_clock.98ab7159f728e4b6f22dedee38e4aba3.svg",
     "static/media/I_VERTICAL.svg": "/mayssam/static/media/I_VERTICAL.8b097a0d3cbc16f156d9c99d02da9edb.svg",
-    "main.10a36ee4.css.map": "/mayssam/static/css/main.10a36ee4.css.map",
-    "main.187f38be.js.map": "/mayssam/static/js/main.187f38be.js.map",
+    "main.d93b6a2c.css.map": "/mayssam/static/css/main.d93b6a2c.css.map",
+    "main.c3f1c1e4.js.map": "/mayssam/static/js/main.c3f1c1e4.js.map",
     "453.88f941fb.chunk.js.map": "/mayssam/static/js/453.88f941fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10a36ee4.css",
-    "static/js/main.187f38be.js"
+    "static/css/main.d93b6a2c.css",
+    "static/js/main.c3f1c1e4.js"
   ]
 }
