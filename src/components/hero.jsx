@@ -9,7 +9,7 @@ export default function Hero(){
         <div className="w-[100vw] h-[50vh] flex flex-col items-center gap-6 tablet:gap-8 laptop:gap-10 desktop:gap-12 desktop2:gap-12 bg-center shadow-inner_hero" style={{backgroundImage:`url(${p_hero})`,backgroundRepeat:"no-repeat" , backgroundSize:"cover",backgroundPosition:"bottom"}}>
             <Header></Header>
             <h1 className="font-extrabold text-whit text-23 px-6 tablet:text-29 laptop:text-29 desktop:text-32 desktop2:text-41 text-center"><span className="text-red-600">Rapide</span>, <span className="text-red-600">Simple</span> et <span className="text-red-600">Abordable</span> – Votre Location Vous Attend</h1>
-            <div className=" flex flex-col items-center gap-4 desktop2:gap-12" >
+            <div className=" flex flex-col items-center gap-4 desktop2:gap-8" >
             {   
                         !isSmallScreen && 
                 <div className="font-bold h-fit text-20 text-whit flex items-center tablet:gap-6 laptop:tablet:gap-6 desktop:gap-8 ">
