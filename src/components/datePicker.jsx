@@ -13,8 +13,8 @@ import { AnimatePresence , motion } from "framer-motion";
 export default function DatePicker(props) {
   const isMobile = useMediaQuery("only screen and (max-width : 767px)");
   const isTablet = useMediaQuery("only screen and (max-width : 1024px) and (min-width :768px)");
-  const isLaptop = useMediaQuery("only screen and (max-width : 1366px)");
-  const isDesktop = useMediaQuery("only screen and (max-width : 1442px)");
+  const isLaptop = useMediaQuery("only screen and (max-width : 1365px) and (min-width :1024px)");
+  const isDesktop = useMediaQuery("only screen and (min-width :1366px)");
   const scale = useState(isMobile ? 0.8 : isTablet ? 0.85 : isLaptop ? 0.9 : isDesktop ? 0.9 : 1 )
   const [date, setDate] = useState(props.start === 0 ? dayjs():dayjs().add(props.start, 'month'));
   const customTheme = createTheme({
@@ -47,11 +47,11 @@ export default function DatePicker(props) {
   });
   
   return (
-    <div className="flex flex-col relative gap-[2rem] h-12 tablet:h-16 laptop:h-16 desktop:h-full desktop2:h-full w-full min-w-[12rem]">
+    <div className="flex flex-col relative gap-[2rem] h-12 tablet:h-16 laptop:h-16 desktop:h-full desktop2:h-full  min-w-[12rem]">
     <div tabIndex={"0"} onClick={()=>{props.setOpen(!props.open)}} className={classNames("flex flex-col cursor-pointer justify-between h-full min-w-[12rem] p-[0.5rem] desktop2:p-[0.75rem]  shadow-input bg-neutral-100 hover:shadow-input_hover_red_50 hover:bg-red-50    rounded-[5px] ",{"bg-red-50":props.open})}>
                     <p className="text-neutral-500 font-normal text-11 tablet:text-14 laptop:text-14 desktop:text-16 desktop2:text-18 ">{props.title}</p>
                     <div className="flex items-center  gap-[0.375rem] desktop:gap-[0.5rem] desktop2:gap-[0.5rem]" >
-                        <I_CALENDAR className="h-[13px] w-[10px] tablet:h-[18px] tablet:w-[17px] laptop:w-[21px] laptop:h-[23px]"/>
+                        <I_CALENDAR className="h-[13px] w-[10px] tablet:h-[18px] tablet:w-[17px] laptop:w-[20px] laptop:h-[22px]"/>
                             <p className="font-medium text-14 tablet:text-18 laptop:text-18 desktop:text-20 desktop2:text-23   text-neutral-900">{date.format("ddd")+","+date.format("MMM")+","+date.format("DD")}</p>  
                     </div>
     </div>

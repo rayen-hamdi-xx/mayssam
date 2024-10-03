@@ -6,7 +6,7 @@ export default function Agences(props){
     const agences =['Aéroport Carthage, Tunis','Aéroport intl. de Tozeur-Nefta','Aéroport intl. de Tbarka','Aéroport intl. de Sfax','Aéroport intl. Monastir','Aéroport intl. de Gafsa','Aéroport de Gabès',"Aéroport intl. d'Ennfidha",'Aéroport intl. de Djerba','Agence de Menzah 8'];
     const ref=useRef(null);
     return (
-        <div  onClick={()=>{ref.current.focus()}}  tabIndex={"0"} className={classNames(" relative flex flex-col items-center cursor-pointer justify-between  min-w-fit desktop2:min-w-[23rem] w-full h-12 tablet:h-16 laptop:h-16 desktop:h-fit desktop2:h-fit shadow-input bg-neutral-100  hover:shadow-input_hover_red_50 hover:bg-red-50 focus-within:shadow-input_hover_red_50 focus-within:bg-red-50   rounded-[5px] ",{"shadow-input_hover_red_50 bg-red-50":props.isSearching})}>
+        <div  onClick={()=>{ref.current.focus()}}  tabIndex={"0"} className={classNames(" relative flex flex-col items-center cursor-pointer justify-between  min-w-fit desktop2:min-w-[22rem] w-full h-12 tablet:h-16 laptop:h-16 desktop:h-fit desktop2:h-fit shadow-input bg-neutral-100  hover:shadow-input_hover_red_50 hover:bg-red-50 focus-within:shadow-input_hover_red_50 focus-within:bg-red-50   rounded-[5px] ",{"shadow-input_hover_red_50 bg-red-50":props.isSearching})}>
                     <div className="p-[0.5rem] tablet:p-[0.75rem] laptop:p-[0.75rem] desktop:p-[0.75rem] desktop2:p-[0.75rem] w-full">
                     <p className="text-neutral-500 font-normal text-11 tablet:text-14 laptop:text-14 desktop:text-16 desktop2:text-18">Agence de retrait</p>
                     <div className="flex items-center gap-[0.375rem]">

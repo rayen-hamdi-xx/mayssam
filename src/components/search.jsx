@@ -6,7 +6,6 @@ import TimePicker from "./timePicker.jsx"
 import { useEffect, useState } from "react"
 import Agences from "./agences.jsx"
 import { useMediaQuery } from "@mui/material"
-import SearchMobile from "./searchMobile.jsx"
 export default function Search(){
     const isMobile = useMediaQuery("only screen and (max-width : 767px)");
     const isTablet = useMediaQuery("only screen and (max-width : 1024px) and (min-width :768px)");
@@ -60,21 +59,9 @@ export default function Search(){
     },[ishdep]);
     
     return(
-        <div className="w-[22rem] h-[20rem] tablet:h-[14rem] tablet:w-[45rem] laptop:h-[14rem] laptop:w-[47.25rem] desktop:w-[79vw] desktop:h-fit desktop2:w-[82vw] desktop2:h-fit bg-white rounded-[10px] shadow-search py-8 desktop:py-5 desktop2:py-5    flex  justify-between gap-[2rem] ">
-           {/*<div className="w-full h-full sm:flex-wrap xl:flex-nowrap md:flex-wrap  flex gap-[1.5rem]   ">
-                <Agences isSearching={isSearching} setIsSearching={setIsSearching} value={value} setValue={setValue}></Agences>
-                <DatePicker title="Date de départ" start={0} open={isdep} setOpen={setdep}/>
-                
-                <TimePicker open={ishdep} setOpen={sethdep}></TimePicker>
-
-                <DatePicker title="Date de retour" start={1} open={isret} setOpen={setret}/>
-
-                <TimePicker open={ishret} setOpen={sethret} ></TimePicker>
-
-            </div>
-            <div  className=" 2xl:w-[6vw] xl:w-[6vw] md:w-full lg:w-full sm:w-full px-[0.75rem] py-[0.75rem] h-[5rem] flex items-center justify-center cursor-pointer hover:bg-neutral-900 transition-colors duration-300   bg-neutral-800 rounded-[10px]"><I_SEARCH/></div>
-            */}
-           <div className="w-full h-full  flex flex-col justify-between  flex-wrap px-6  tablet:px-8  laptop:px-8 desktop:px-4 deskop2:px-5   ">
+        <div className=" h-fit  w-fit  bg-white rounded-[10px] shadow-search py-8 desktop:py-5 desktop2:py-5  ">
+           
+           <div className="w-full h-full  flex flex-col gap-6  justify-between  flex-wrap px-6  tablet:px-8  laptop:px-8 desktop:px-4 deskop2:px-5   ">
             { isMobile && <>
             <Agences isSearching={isSearching} setIsSearching={setIsSearching} value={value} setValue={setValue}></Agences>  
             <div className="flex items-center justify-between gap-[1.5rem] ">
@@ -121,7 +108,7 @@ export default function Search(){
                 <DatePicker title="Date de retour" start={1} open={isret} setOpen={setret}/>
 
                 <TimePicker open={ishret} setOpen={sethret} ></TimePicker>
-                <div  className="w-fit h-20 flex items-center justify-center cursor-pointer hover:bg-neutral-900 transition-colors duration-300 px-8 bg-neutral-800 rounded-[10px]"><I_SEARCH/></div>
+                <div  className="w-fit  flex items-center justify-center cursor-pointer hover:bg-neutral-900 transition-colors duration-300 px-8 bg-neutral-800 rounded-[10px]"><I_SEARCH/></div>
                 </div>
             }
 
