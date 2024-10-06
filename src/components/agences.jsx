@@ -28,7 +28,7 @@ export default function Agences(props){
                     <AnimatePresence>
                     { props.isSearching &&
                    
-                    <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.5}} className="w-full h-fit z-10  absolute top-[3.5rem] tablet:top-[4.5rem] laptop:top-[4.5rem] desktop:top-[5.5rem] desktop2:top-[5.5] rounded-[5px]  bg-neutral-100  max-h-[13rem] overflow-y-auto drop-shadow-[0_2px_15px_rgba(0,0,0,0.15)]">
+                    <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}  transition={{duration:0.5}} className="w-full h-fit z-10  absolute top-[3.5rem] tablet:top-[4.5rem] laptop:top-[4.5rem] desktop:top-[5.5rem] desktop2:top-[5.5] rounded-[5px]  bg-neutral-100  max-h-[13rem] overflow-y-auto drop-shadow-[0_2px_15px_rgba(0,0,0,0.15)]">
                         
                         
                         {agences.map((agence,index)=>{

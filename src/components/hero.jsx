@@ -9,7 +9,7 @@ export default function Hero(){
     return(
         <div className="w-[100vw] relative h-[50vh] flex flex-col items-center bg-center shadow-inner_hero " style={{backgroundImage:`url(${p_hero})`,backgroundRepeat:"no-repeat" , backgroundSize:"cover",backgroundPosition:"bottom"}}>
             <Header></Header>
-            <h1 className="font-extrabold mt-[0rem] tablet:mt-[2rem] laptop:mt-[2rem] desktop:mt-[3rem]  desktop2:mt-[3rem] text-whit text-23 px-6 tablet:text-29 laptop:text-29 desktop:text-41 desktop2:text-41 text-center">
+            <h1 className="font-extrabold mt-[1rem] tablet:mt-[2rem] laptop:mt-[2rem] desktop:mt-[3rem]  desktop2:mt-[3rem] text-whit text-23 px-6 tablet:text-29 laptop:text-29 desktop:text-41 desktop2:text-41 text-center">
                 <span className="text-red-600">Rapide</span>, <span className="text-red-600">Simple</span> et <span className="text-red-600">Abordable</span> – Votre Location Vous Attend
             </h1>
             <div className="flex flex-col absolute tablet:bottom-[7.5rem] laptop:bottom-[8rem] desktop:bottom-[5rem] desktop2:bottom-[5rem] items-center " >

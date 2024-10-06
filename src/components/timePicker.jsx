@@ -5,9 +5,11 @@ import classNames from "classnames";
 import { AnimatePresence,motion } from "framer-motion";
 export default function TimePicker(props){
     const [time,setTime]=useState(dayjs());
+
+    
     
     return (
-        <div onClick={()=>props.setOpen(!props.open)} tabIndex={"0"} className={classNames("flex flex-col cursor-pointer justify-between h-full p-[0.5rem] desktop2:p-[0.75rem] desktop2:w-[8rem] desktop:p-[0.5rem] desktop:w-[7rem]  shadow-input bg-neutral-100 hover:shadow-input_hover_red_50 hover:bg-red-50 relative   rounded-[5px] ",{" p-[0.5rem]":!props.open})}>
+        <div onClick={()=>props.setOpen(!props.open)} tabIndex={"0"} className={classNames("flex flex-col cursor-pointer justify-between h-full p-[0.5rem] tablet:p-[0.75rem] laptop:p-[0.75rem] desktop2:p-[0.75rem] desktop2:w-[8rem] desktop:p-[0.75rem] desktop:w-[7rem]  shadow-input bg-neutral-100 hover:shadow-input_hover_red_50 hover:bg-red-50 relative   rounded-[5px] ",{" p-[0.5rem]":!props.open})}>
                    <AnimatePresence>
                     
                      <>

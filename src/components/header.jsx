@@ -5,11 +5,21 @@ import logosrc from "../assets/images/p_logo.png"
 
 import CurrencyMenu from "./currencyMenu";
 import Navmodal from "./navmodal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 export default function Header(){
     const isSmallScreen = useMediaQuery("only screen and (max-width : 768px)");
     const [toggleModal,setModal]=useState(false);
+    useEffect(() => {
+        if (toggleModal) {
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.overflow = "unset"; 
+        }
+        return () => {
+          document.body.style.overflow = "unset";
+        };
+      }, [toggleModal]);
     return(
         <>
         <nav className="w-full  bg-transparent flex items-center h-[10vh] justify-between px-6 laptop:px-12 desktop:px-16 desktop2:px-20 py-4 ">
