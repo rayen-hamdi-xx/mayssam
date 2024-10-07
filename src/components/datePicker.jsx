@@ -47,12 +47,12 @@ export default function DatePicker(props) {
   });
   
   return (
-    <div className="flex flex-col relative gap-[2rem] h-full   min-w-[12rem]">
-    <div tabIndex={"0"} onClick={()=>{props.setOpen(!props.open)}} className={classNames("flex flex-col cursor-pointer justify-between h-full min-w-[12rem] w-full p-[0.5rem] tablet:p-[0.75rem] laptop:p-[0.75rem] desktop2:p-[0.75rem] shadow-input bg-neutral-100 hover:shadow-input_hover_red_50 hover:bg-red-50    rounded-[5px] ",{"bg-red-50":props.open})}>
-                    <p className="text-neutral-500 font-normal text-11 tablet:text-14 laptop:text-14 desktop:text-16 desktop2:text-18 ">{props.title}</p>
+    <div className="flex flex-col relative gap-[2rem] h-full   min-w-[9rem]">
+    <div tabIndex={"0"} onClick={()=>{props.setOpen(!props.open)}} className={classNames("flex flex-col cursor-pointer justify-between h-full  w-full p-[0.5rem] tablet:p-[0.5rem] laptop:p-[0.5rem] desktop2:p-[0.5rem] desktop:p-[0.5rem] shadow-input bg-neutral-100 hover:shadow-input_hover_red_50 hover:bg-red-50    rounded-[5px] ",{"bg-red-50":props.open})}>
+                    <p className="text-neutral-500 font-normal text-11 tablet:text-14 laptop:text-14 desktop:text-14 desktop2:text-14 ">{props.title}</p>
                     <div className="flex items-center  gap-[0.375rem] desktop:gap-[0.5rem] desktop2:gap-[0.5rem]" >
-                        <I_CALENDAR className="h-[13px] w-[10px] tablet:h-[18px] tablet:w-[17px] laptop:w-[20px] laptop:h-[22px] desktop:h-[18px] desktop:w-[16px]  desktop2:w-[20px] desktop2:h-[22px] "/>
-                            <p className="font-medium text-14 tablet:text-18 laptop:text-18 desktop:text-20 desktop2:text-23   text-neutral-900">{date.format("ddd")+","+date.format("MMM")+","+date.format("DD")}</p>  
+                        <I_CALENDAR className="h-[14px]  w-[12px] tablet:h-[16px] tablet:w-[14px] laptop:w-[14px] laptop:h-[16px] desktop:h-[18px] desktop:w-[16px]  desktop2:w-[16px] desktop2:h-[18px] self-start desktop:mt-[3px] desktop2:mt-[3px] laptop:mt-1 tablet:mt-1 mt-1"/>
+                            <p className="font-medium text-16 tablet:text-18 laptop:text-18 desktop:text-18 desktop2:text-18   text-neutral-900">{date.format("ddd")+","+date.format("MMM")+","+date.format("DD")}</p>  
                     </div>
     </div>
     <AnimatePresence>

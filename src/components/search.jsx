@@ -59,7 +59,7 @@ export default function Search(){
     },[ishdep]);
     
     return(
-        <div className=" absolute   w-fit top-[calc(50vh-10rem)]  h-[20rem] px-6  py-6  desktop:h-[7rem] desktop:top-[calc(50vh-3.5rem)] desktop:py-5 desktop:px-4 desktop2:top-[calc(50vh-4rem)] desktop2:h-[8rem] tablet:h-[14rem] tablet:top-[calc(50vh-7rem)] tablet:px-8 tablet:py-8 laptop:px-8 laptop:py-8 laptop:h-[14rem]   bg-white rounded-[10px] shadow-search  desktop2:py-5 desktop2:px-4  ">
+        <div className=" absolute   w-fit top-[calc(50vh-10rem)]  h-[20rem] px-6  py-6  desktop:h-[6rem] desktop:top-[calc(50vh-3rem)] desktop:py-4 desktop:px-4 desktop2:top-[calc(50vh-3rem)] desktop2:h-[6rem] tablet:h-[13rem] tablet:top-[calc(50vh-6.5rem)] tablet:px-6 tablet:py-6 laptop:px-6 laptop:py-6 laptop:h-[13rem]  laptop:top-[calc(50vh-6.5rem)]   bg-white rounded-[10px] shadow-search  desktop2:py-4 desktop2:px-4  ">
           {isDesktop && 
           <div className="flex h-full gap-8">
                 <Agences isSearching={isSearching} setIsSearching={setIsSearching} value={value} setValue={setValue}></Agences>
