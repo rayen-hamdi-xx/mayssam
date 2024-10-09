@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/mayssam/static/css/main.b268179a.css",
-    "main.js": "/mayssam/static/js/main.742eae21.js",
+    "main.css": "/mayssam/static/css/main.ddd54747.css",
+    "main.js": "/mayssam/static/js/main.dae34d6e.js",
     "static/js/453.88f941fb.chunk.js": "/mayssam/static/js/453.88f941fb.chunk.js",
     "static/media/p-hero2.webp": "/mayssam/static/media/p-hero2.5d223c66e315d5aade78.webp",
-    "static/media/47860.webp": "/mayssam/static/media/47860.469217be440de8ac9eee.webp",
     "static/media/47139.webp": "/mayssam/static/media/47139.d8dca9498447f7653821.webp",
+    "static/media/47860.webp": "/mayssam/static/media/47860.f21df57ba646ca7aad34.webp",
+    "static/media/46928.webp": "/mayssam/static/media/46928.743c50cf20bca4029398.webp",
     "static/media/47129.webp": "/mayssam/static/media/47129.6c9bd99081a3702b63e2.webp",
+    "static/media/i_logo.svg": "/mayssam/static/media/i_logo.b0ea165f16b16e9805bec0414b4c41a8.svg",
+    "static/media/47215.webp": "/mayssam/static/media/47215.bd640442359de386a226.webp",
     "static/media/metropolis.extra-bold.otf": "/mayssam/static/media/metropolis.extra-bold.f179dd5fc7c0864a964b.otf",
     "static/media/metropolis.black.otf": "/mayssam/static/media/metropolis.black.1510951eb17eaadbe995.otf",
     "static/media/metropolis.bold.otf": "/mayssam/static/media/metropolis.bold.c5e04fafcff6fc79cd76.otf",
@@ -16,10 +19,12 @@
     "static/media/metropolis.regular.otf": "/mayssam/static/media/metropolis.regular.67a1988d7b65b0aaa16d.otf",
     "static/media/metropolis.extra-light.otf": "/mayssam/static/media/metropolis.extra-light.d1784bd894f8e478ab9f.otf",
     "static/media/metropolis.thin.otf": "/mayssam/static/media/metropolis.thin.90c6171184f230bfa07a.otf",
+    "static/media/46899.webp": "/mayssam/static/media/46899.c7905e24cfb1d4f5eb18.webp",
     "static/media/47102.webp": "/mayssam/static/media/47102.e14665d7a1187cf9e88e.webp",
     "static/media/46924.webp": "/mayssam/static/media/46924.7be272030885560c32e4.webp",
     "static/media/46962.webp": "/mayssam/static/media/46962.63b76d7fc632e99b1c36.webp",
     "static/media/47049.webp": "/mayssam/static/media/47049.bcdd21d9da5708254c23.webp",
+    "static/media/46662.webp": "/mayssam/static/media/46662.2549486925fe78968b14.webp",
     "static/media/i_clients.svg": "/mayssam/static/media/i_clients.69d2d8d28cc8e4a63fb3e16c03dc658a.svg",
     "static/media/i_flexible.svg": "/mayssam/static/media/i_flexible.6e163a51ecb305357ba9eff1edfa287a.svg",
     "static/media/i_shield.svg": "/mayssam/static/media/i_shield.a517d543496efe798f7ab0874ea09c60.svg",
@@ -33,12 +38,12 @@
     "static/media/i_menu.svg": "/mayssam/static/media/i_menu.af8bda6a96fa94a910e8390adbc8641e.svg",
     "static/media/i_polygon.svg": "/mayssam/static/media/i_polygon.3db72a1010aaf8505336a8eaf5e1d2b4.svg",
     "static/media/i_clock.svg": "/mayssam/static/media/i_clock.98ab7159f728e4b6f22dedee38e4aba3.svg",
-    "main.b268179a.css.map": "/mayssam/static/css/main.b268179a.css.map",
-    "main.742eae21.js.map": "/mayssam/static/js/main.742eae21.js.map",
+    "main.ddd54747.css.map": "/mayssam/static/css/main.ddd54747.css.map",
+    "main.dae34d6e.js.map": "/mayssam/static/js/main.dae34d6e.js.map",
     "453.88f941fb.chunk.js.map": "/mayssam/static/js/453.88f941fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b268179a.css",
-    "static/js/main.742eae21.js"
+    "static/css/main.ddd54747.css",
+    "static/js/main.dae34d6e.js"
   ]
 }
