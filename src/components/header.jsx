@@ -2,6 +2,7 @@ import { useMediaQuery } from "@mui/material";
 import {ReactComponent as  I_LOGIN} from "../assets/icons/i_login.svg"
 import {ReactComponent as  I_MENU} from "../assets/icons/i_menu.svg"
 import logosrc from "../assets/images/p_logo.png"
+import {ReactComponent as I_LOGO} from "../assets/icons/i_logo.svg"
 
 import CurrencyMenu from "./currencyMenu";
 import Navmodal from "./navmodal";
@@ -51,14 +52,16 @@ export default function Header(){
                 <>
                 <I_MENU className="cursor-pointer" onClick={()=>{setModal(true)}}></I_MENU>
                 <div className="bg-transparent h-10 w-fit rounded-[4px] text-black">
-                <img src={logosrc} className="h-10 " alt="Logo Mayssam rent a car"></img>
+                {/*<img src={logosrc} className="h-10 " alt="Logo Mayssam rent a car"></img>*/}
+                <I_LOGO className="h-10 " alt="Logo Mayssam rent a car"></I_LOGO>
                 </div>
                 <div className="bg-red-600  flex items-center rounded-[4px] cursor-pointer py-0.5 pr-3 pl-2 transition-colors duration-300 hover:bg-red-700 "><I_LOGIN className="h-6"/></div>
                 </>
                  : 
                 <>
                 <div className="bg-transoarent       rounded-[4px]  text-black font-bold h-12 w-fit  ">
-                <img src={logosrc} className="h-12"  alt="Logo Mayssam rent a car"></img>
+                {/*<img src={logosrc} className="h-12"  alt="Logo Mayssam rent a car"></img>*/}
+                <I_LOGO className="h-12 " alt="Logo Mayssam rent a car"></I_LOGO>
             </div>
             <div className="flex items-center gap-12">
             <div className="text-whit  flex items-center gap-[2rem] font-medium  tablet:text-14 laptop:text-16 desktop:text-16 desktop2:text-16  ">
