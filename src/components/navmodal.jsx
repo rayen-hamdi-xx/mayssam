@@ -1,17 +1,15 @@
-import logosrc from "../assets/images/p_logo.png"
-import CurrencyMenu from "./currencyMenu"
-import {ReactComponent as  I_LOGIN} from "../assets/icons/i_login.svg"
+
 import {X} from "lucide-react"
-import {AnimatePresence, motion} from "framer-motion"
+import { motion} from "framer-motion"
 import { currencyContext } from "./hooks/contexts/useCurrency";
 import { useContext } from "react"
 import classNames from "classnames"
 export default function Navmodal(props){
     const currencies = [["TND (DT)","DT",1],["USD ($)","$",4],["EUR (€)","€",3],["GBP (£)","£",5]];
-    const {currency,setCurrency,symb,setSymb,setFactor}=useContext(currencyContext);
+    const {currency,setCurrency,setSymb,setFactor}=useContext(currencyContext);
     
     return (
-    <motion.div initial={{opacity:0.9,x:"-100vw"}} animate={{opacity:1,x:0}} exit={{x:"-100vw"}} transition={{duration:0.3,type:"tween"}} className="h-[100vh] w-[100vw] flex flex-col   items-center py-4 gap-6  fixed  top-0 z-10 bg-neutral-900  text-white">
+    <motion.div initial={{opacity:0.9,x:"-100%"}} animate={{opacity:1,x:0}} exit={{x:"-100%"}} transition={{duration:0.3,type:"tween"}} className="h-[100%] w-[100%] flex flex-col   items-center py-4 gap-6  fixed  top-0 z-50 bg-neutral-900  text-white">
         <div className="flex  w-full px-4 justify-between">
         {/*<img className="h-16 " src={logosrc}/>*/}
         <div className="text-26 font-semibold">Mayssam Rent a Car </div>

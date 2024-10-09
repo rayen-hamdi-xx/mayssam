@@ -6,10 +6,33 @@ import logosrc from "../assets/images/p_logo.png"
 import CurrencyMenu from "./currencyMenu";
 import Navmodal from "./navmodal";
 import { useEffect, useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence ,motion } from "framer-motion";
+import classNames from "classnames";
 export default function Header(){
     const isSmallScreen = useMediaQuery("only screen and (max-width : 768px)");
     const [toggleModal,setModal]=useState(false);
+    const [isPast50vh, setIsPast50vh] = useState(false);
+    const handleScroll = () => {
+      const scrollY = window.scrollY; // Current scroll position
+      const viewportHeight = window.innerHeight; // Height of the viewport
+
+      // Check if scroll position is past 50% of the viewport height
+      if (scrollY >= viewportHeight / 2) {
+          setIsPast50vh(true);
+      } else {
+          setIsPast50vh(false);
+      }
+  };
+
+  useEffect(() => {
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+    }, []);
     useEffect(() => {
         if (toggleModal) {
           document.body.style.overflow = "hidden";
@@ -22,7 +45,7 @@ export default function Header(){
       }, [toggleModal]);
     return(
         <>
-        <nav className="w-full  bg-transparent flex items-center h-[10vh] justify-between px-6 laptop:px-12 desktop:px-16 desktop2:px-20 py-4 ">
+        <motion.nav  className={classNames("w-full z-40 flex items-center h-[10vh] justify-between px-6 laptop:px-12 desktop:px-16 desktop2:px-20 py-4 transition-all duration-300 ease-in-out ",{"bg-transparent":!isPast50vh,"bg-neutral-900 fixed  ":isPast50vh})}>
             {
                 isSmallScreen ?
                 <>
@@ -38,7 +61,7 @@ export default function Header(){
                 <img src={logosrc} className="h-12"  alt="Logo Mayssam rent a car"></img>
             </div>
             <div className="flex items-center gap-12">
-            <div className="text-whit  flex items-center gap-[2rem] font-medium  tablet:text-14 laptop:text-16 desktop:text-18 desktop2:text-18  ">
+            <div className="text-whit  flex items-center gap-[2rem] font-medium  tablet:text-14 laptop:text-16 desktop:text-16 desktop2:text-16  ">
                 <p className="hover:text-white  opacity-90 hover:opacity-100 cursor-pointer">Voitures</p>
                 <p  className="hover:text-white opacity-90 hover:opacity-100 cursor-pointer">Agences</p>
                 <p  className="hover:text-white opacity-90  hover:opacity-100 cursor-pointer">Contactez-Nous</p>
@@ -52,7 +75,7 @@ export default function Header(){
             }
             
 
-        </nav>
+        </motion.nav>
          <AnimatePresence> {isSmallScreen && toggleModal &&  <Navmodal setModal={setModal}></Navmodal>}</AnimatePresence> 
         </>
         

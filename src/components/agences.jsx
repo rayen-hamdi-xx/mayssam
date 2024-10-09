@@ -11,8 +11,8 @@ export default function Agences(props){
                     <div  className="flex flex-col justify-between h-full p-[0.5rem]  w-full">
                     <p className="text-neutral-500 font-normal text-11 tablet:text-14 laptop:text-14 desktop:text-14 desktop2:text-14">Agence de retrait</p>
                     <div className="flex items-center gap-[0.375rem]">
-                        <I_PIN className="w-[16px] h-[12px] tablet:w-[21px] tablet:h-[16px] laptop:h-[16px] laptop:w-[21px] desktop:w-[18px] desktop:h-[16px] desktop2:w-[18px] desktop2:h-[16px] self-start desktop:mt-1 desktop2:mt-1 laptop:mt-1 tablet:mt-1 mt-1"/>
-                        <input onInput={(e)=>{setSV(e.target.value)}} ref={ref} className="text-ellipsis cursor-pointer font-medium outline-none text-14 tablet:text-18 laptop:text-18 desktop:text-18   desktop2:text-18  text-neutral-900 bg-transparent w-full placeholder:text-neutral-900 focus:placeholder:text-neutral-500"
+                        <I_PIN className="w-[16px] h-[12px] tablet:w-[21px] tablet:h-[16px] laptop:h-[16px] laptop:w-[21px] desktop:w-[18px] desktop:h-[16px] desktop2:w-[18px] desktop2:h-[16px] self-start desktop:mt-1 desktop2:mt-1 laptop:mt-1 tablet:mt-1 mt-[6px]"/>
+                        <input onInput={(e)=>{setSV(e.target.value)}} ref={ref} className="text-ellipsis cursor-pointer font-medium outline-none text-16 tablet:text-18 laptop:text-18 desktop:text-18   desktop2:text-18  text-neutral-900 bg-transparent w-full placeholder:text-neutral-900 focus:placeholder:text-neutral-500"
                          onChange={(e)=>{
                             
                             if(e.target.value===props.value){

@@ -6,13 +6,14 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function CurrencyMenu(){
     const menuRef = useRef(null)
+    /*najem nbadel el currencies w facteur mteehom mel array hedha */
     const currencies = [["TND (DT)","DT",1],["USD ($)","$",4],["EUR (€)","€",3],["GBP (£)","£",5]];
     const {currency,setCurrency,symb,setSymb,setFactor}=useContext(currencyContext);
     const [isEnabled,setIsEnabled] = useState(false);
 
     return (
         <div className="flex flex-col items-center relative min-w-14 "> 
-                    <button onClick={()=>{setIsEnabled(!isEnabled);}} className={classNames("flex text-whit   w-fit  items-center gap-[0.25rem] cursor-pointer text-23 tablet:text-14 laptop:text-16 desktop:text-18   font-medium",{"text-white opacity-100": isEnabled,"opacity-90 hover:text-white hover:opacity-100":!isEnabled})}>{currency}<I_POLY className={classNames("transition-transform duration-100 ease-in-out",{"rotate-180":isEnabled})} /></button>
+                    <button onClick={()=>{setIsEnabled(!isEnabled);}} className={classNames("flex text-whit   w-fit  items-center gap-[0.25rem] cursor-pointer text-23 tablet:text-14 laptop:text-16 desktop:text-16 desktop2:text-16   font-medium",{"text-white opacity-100": isEnabled,"opacity-90 hover:text-white hover:opacity-100":!isEnabled})}>{currency}<I_POLY className={classNames("transition-transform duration-100 ease-in-out",{"rotate-180":isEnabled})} /></button>
                    
                    <AnimatePresence>
                    { 
