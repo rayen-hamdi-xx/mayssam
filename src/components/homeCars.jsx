@@ -47,7 +47,7 @@ export default function HomeCars(){
     return(
         <div className="h-fit  relative  flex flex-col items-center  gap-24 w-full mt-[15rem] tablet:mt-[10.5rem] laptop:mt-[10.5rem] desktop:mt-[7rem] desktop2:mt-[7rem] mb-32">
             <h2 className="flex items-center justify-center font-bold text-29 text-neutral-800">Explorez Notre Flotte</h2>
-            <div ref={scrollContainerRef} className=" flex gap-16 no-scrollbar  overflow-x-auto  w-[210.66px] tablet:w-[485.32px] laptop:w-[759.98px] desktop:w-[1034.64px] desktop2:w-[1309.3px]">
+            <div ref={scrollContainerRef} className=" flex gap-16 no-scrollbar  overflow-x-auto  w-[211px] tablet:w-[486px] laptop:w-[761px] desktop:w-[1036px] desktop2:w-[1311px]">
                 {cars.map(
                     (car,index)=>(
                         <div key={index} className="flex  items-center flex-col">
@@ -58,8 +58,8 @@ export default function HomeCars(){
                 )}
                 
             </div>
-           <div onClick={()=>scrollRight(isDesktop2 ? 274.66 : 274.66)} className="top-1/2 desktop2:px-4 desktop2:py-4 desktop:px-4 desktop:py-4 laptop:px-4 laptop:py-4 tablet:px-4 tablet:py-4 px-1 py-2 flex items-center laptop:right-6 desktop:right-6  right-4 desktop2:right-6 tablet:right-[0.25rem] absolute rounded-full cursor-pointer group"> <Chevron index={0} className="group-hover:scale-125 hover:scale-125 transition-all ease-in-out cursor-pointer duration-300  h-6 tablet:h-6 desktop:h-4 desktop2:h-4 laptop:h-4  "></Chevron></div>
-           <div onClick={()=>scrollLeft(isDesktop2 ? 274.66 : 274.66)} className="top-1/2 desktop2:px-4 desktop2:py-4 desktop:px-4 desktop:py-4 laptop:px-4 laptop:py-4  tablet:px-4 tablet:py-4 px-1 py-2 flex items-center laptop:left-6 desktop:left-6  left-4 desktop2:left-6 tablet:left-[0.25rem] absolute rounded-full cursor-pointer group"><Chevron index={1} className=" group-hover:scale-125 hover:scale-125 transition-all ease-in-out cursor-pointer duration-300 h-6 tablet:h-6 desktop:h-4 desktop2:h-4 laptop:h-4  rotate-180"></Chevron></div> 
+           <div onClick={()=>scrollRight(275)} className="top-1/2 desktop2:px-4 desktop2:py-4 desktop:px-4 desktop:py-4 laptop:px-4 laptop:py-4 tablet:px-4 tablet:py-4 px-1 py-2 flex items-center laptop:right-6 desktop:right-6  right-4 desktop2:right-6 tablet:right-[0.25rem] absolute rounded-full cursor-pointer group"> <Chevron index={0} className="group-hover:scale-125 hover:scale-125 transition-all ease-in-out cursor-pointer duration-300  h-6 tablet:h-6 desktop:h-4 desktop2:h-4 laptop:h-4  "></Chevron></div>
+           <div onClick={()=>scrollLeft(275)} className="top-1/2 desktop2:px-4 desktop2:py-4 desktop:px-4 desktop:py-4 laptop:px-4 laptop:py-4  tablet:px-4 tablet:py-4 px-1 py-2 flex items-center laptop:left-6 desktop:left-6  left-4 desktop2:left-6 tablet:left-[0.25rem] absolute rounded-full cursor-pointer group"><Chevron index={1} className=" group-hover:scale-125 hover:scale-125 transition-all ease-in-out cursor-pointer duration-300 h-6 tablet:h-6 desktop:h-4 desktop2:h-4 laptop:h-4  rotate-180"></Chevron></div> 
         </div>
     )
 }
